@@ -1,9 +1,9 @@
 import { getArray, getSingle } from '@lib/supabase-utils'
 import { supabaseAdmin } from '@lib/supabaseAdmin'
-import { checkForSponsorship } from '@protected/_utils/github'
-import { siteRootDir } from 'studio/constants'
 import { Session, createServerSupabaseClient } from '@supabase/auth-helpers-nextjs'
 import { NextApiHandler } from 'next'
+import { checkForSponsorship } from 'protected/_utils/github'
+import { siteRootDir } from 'protected/constants'
 
 // const usernameWhitelist = ['natew', 'alitnk']
 

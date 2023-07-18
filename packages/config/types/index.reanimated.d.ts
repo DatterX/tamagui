@@ -1,7 +1,12 @@
 export * from './media';
 export * from './createGenericFont';
+export * from './animations.reanimated';
 export declare const config: {
     animations: import("@tamagui/web").AnimationDriver<{
+        '100ms': {
+            type: "timing";
+            duration: number;
+        };
         bouncy: {
             type: "spring";
             damping: number;
@@ -32,8 +37,8 @@ export declare const config: {
         };
     }>;
     defaultFont: string;
-    shouldAddPrefersColorThemes: boolean;
-    themeClassNameOnRoot: boolean;
+    shouldAddPrefersColorThemes: true;
+    themeClassNameOnRoot: true;
     themes: typeof import("@tamagui/themes/types/generated-new");
     media: {
         xl: {

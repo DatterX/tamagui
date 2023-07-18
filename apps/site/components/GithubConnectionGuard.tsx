@@ -1,9 +1,9 @@
 import { StudioQueueCard } from '@components/StudioQueueCard'
-import { isLocal } from 'studio/constants'
 import { Lock } from '@tamagui/lucide-icons'
+import { ButtonLink } from 'components/Link'
 import { useUser } from 'hooks/useUser'
 import { useRouter } from 'next/router'
-import { ButtonLink } from 'studio/Link'
+import { isLocal } from 'protected/constants'
 import { H2, Paragraph, Spinner, YStack } from 'tamagui'
 
 export const GithubConnectionGuard = ({ children }: { children: React.ReactNode }) => {
